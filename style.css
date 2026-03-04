@@ -77,12 +77,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    /* use three copies of the gif to fill the width */
+    /* use three copies of the gif to fill the width without gaps */
     background-image: url('kanye.gif'), url('kanye.gif'), url('kanye.gif');
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: left top, center top, right top;
-    background-size: contain, contain, contain;
-    background-attachment: fixed, fixed, fixed;
+    /* each instance takes one third of the viewport width, scaled proportional */
+    background-size: 33.333% auto;
+    background-attachment: fixed;
     color: var(--text);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
