@@ -605,6 +605,14 @@ footer {
     filter: brightness(0) invert(1);
 }
 
+#prank img {
+    filter: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
 .control-button:hover img {
     transform: rotate(45deg) scale(1.1);
 }
